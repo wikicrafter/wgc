@@ -15,7 +15,8 @@ const NavBar = () => {
   return (
     <div>
         {/**Mobile Navbar */}
-    <div className="items-center text-[#5eff5a] bg-[#212529] px-[6px] py-[12px] flex justify-between">
+    <div className="bg-[#212529] w-full">
+    <div className="w-[95vw] py-[12px] mx-auto items-center flex justify-between text-[#5eff5a]">
         <h2 className="italic text-[15px] font-semibold font-[Kaushan-Script]">Wise Guy Club NFT</h2>   
         <div className="lg:hidden md:hidden">
           <Button ref={btnRef} colorScheme='black' onClick={onOpen}>
@@ -24,6 +25,7 @@ const NavBar = () => {
                 <FaBars />
             </div>
         </Button>
+    </div>
         <Drawer
           isOpen={isOpen}
           placement='top'
