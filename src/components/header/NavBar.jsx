@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <div>
         {/**Mobile Navbar */}
-    <div className="bg-[#212529] w-full">
+    <div className="bg-[#212529] w-full fixed top-0">
     <div className="w-[95vw] py-[12px] mx-auto items-center flex justify-between text-[#5eff5a]">
         <h2 className="italic text-[15px] font-semibold font-[Kaushan-Script]">Wise Guy Club NFT</h2>   
         <div className="lg:hidden md:hidden">
