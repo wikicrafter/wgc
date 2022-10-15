@@ -2,6 +2,7 @@ import React from 'react'
 import About from './About'
 import Examples from './Examples'
 import Goals from './Goals'
+import Stages from './Stages'
 
 const Body = () => {
   return (
@@ -9,6 +10,7 @@ const Body = () => {
       <Goals />
       <Examples />
       <About />
+      <Stages />
     </div>
   )
 }
