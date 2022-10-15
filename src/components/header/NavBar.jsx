@@ -14,8 +14,10 @@ const NavBar = () => {
     const btnRef = React.useRef()
   return (
     <div>
-        {/**Mobile Navbar */}
-    <div className="bg-[#212529] w-full fixed top-0">
+
+
+    {/**Mobile Navbar */}
+    <div className="bg-[#212529] w-full fixed top-0 lg:hidden md:hidden">
     <div className="w-[95vw] py-[12px] mx-auto items-center flex justify-between text-[#5eff5a]">
         <h2 className="italic text-[15px] font-semibold font-[Kaushan-Script]">Wise Guy Club NFT</h2>   
         <div className="lg:hidden md:hidden">
@@ -57,7 +59,7 @@ const NavBar = () => {
                     About Us
                 </a>
                 <a href="#stage">
-                    Community
+                    Stages
                 </a>
                 <a href="#team">
                     Team
@@ -73,6 +75,32 @@ const NavBar = () => {
 
             </div>
     </div>
+
+
+      {/**Desktop NavBar */}
+      <div className="bg-transparent w-[70vw] mx-auto pt-10 flex justify-between items-center">
+        <h2 className="italic text-[21px] font-semibold font-[Kaushan-Script] text-[#5eff5a]">Wise Guy Club NFT</h2>
+        <div className="flex space-x-6 font-[Montserrat] text-[11px] text-white uppercase">
+            <a href="#goal" className="hover:text-[#5eff5a]">
+                Goal
+            </a>
+            <a href="#examples" className="hover:text-[#5eff5a]">
+                Examples
+            </a>
+            <a href="#about" className="hover:text-[#5eff5a]">
+                About Us
+            </a>
+            <a href="#stage" className="hover:text-[#5eff5a]">
+                Stages
+            </a>
+            <a href="#team" className="hover:text-[#5eff5a]">
+                Team
+            </a>
+            <a href="#mint" className="hover:text-[#5eff5a]">
+                Mint
+            </a>
+        </div>
+      </div>
 
     </div> 
     )
