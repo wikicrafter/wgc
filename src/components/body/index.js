@@ -1,4 +1,5 @@
 import React from 'react'
+import About from './About'
 import Examples from './Examples'
 import Goals from './Goals'
 
@@ -7,6 +8,7 @@ const Body = () => {
     <div>
       <Goals />
       <Examples />
+      <About />
     </div>
   )
 }
