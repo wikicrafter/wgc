@@ -96,20 +96,20 @@ const NavBar = () => {
       <div className="" id="navbar">
       <div className="bg-transparent w-[70vw] mx-auto py-4 hidden lg:flex justify-between items-center">
         <h2 className="italic text-[21px] font-semibold font-[Kaushan-Script] text-[#5eff5a]">Wise Guy Club NFT</h2>
-        <div className="flex space-x-6 font-[Montserrat] font-bold text-[11px] text-white uppercase">
-          <span onClick={() => goToSection('#goal')} className="hover:text-[#5eff5a] cursor-pointer">
+        <div className="flex space-x-6 font-[Montserrat] text-[11px] text-white uppercase">
+          <span id="nav1" onClick={() => goToSection('#goal')} className="hover:text-[#5eff5a] cursor-pointer">
                 Goal
             </span>
-            <span onClick={() => goToSection('#examples')} className="hover:text-[#5eff5a] cursor-pointer">
+            <span id="nav2" onClick={() => goToSection('#examples')} className="hover:text-[#5eff5a] cursor-pointer">
                 Examples
             </span>
-            <span onClick={() => goToSection('#about')} className="hover:text-[#5eff5a] cursor-pointer">
+            <span id="nav3" onClick={() => goToSection('#about')} className="hover:text-[#5eff5a] cursor-pointer">
                 About Us
             </span>
-            <span onClick={() => goToSection('#stages')} className="hover:text-[#5eff5a] cursor-pointer">
+            <span id="nav4" onClick={() => goToSection('#stages')} className="hover:text-[#5eff5a] cursor-pointer">
                 Stages
             </span>
-            <span onClick={() => goToSection('#team')} className="hover:text-[#5eff5a] cursor-pointer">
+            <span id="nav5" onClick={() => goToSection('#team')} className="hover:text-[#5eff5a] cursor-pointer">
                 Team
             </span>
             <a href="#mint" className="hover:text-[#5eff5a]">

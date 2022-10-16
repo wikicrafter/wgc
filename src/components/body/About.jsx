@@ -1,8 +1,21 @@
-import React from 'react'
+import { useInView } from 'react-intersection-observer'
+import React, { useEffect } from 'react'
 
 const About = () => {
+  const {ref, inView} = useInView({
+    threshold: 0.1,
+  })
+
+  useEffect(() => {
+    if (inView) {
+        document.querySelector('#nav3').classList.add('text-[#5eff5a]')
+    }
+    if (!inView) {
+        document.querySelector('#nav3').classList.remove('text-[#5eff5a]')
+    }
+    }, [inView])
   return (
-    <div className="w-[90vw] lg:w-[50vw] mx-auto bg-[#fff] pt-[10vh]" id="about">
+    <div className="w-[90vw] lg:w-[50vw] mx-auto bg-[#fff] pt-[10vh]" id="about" ref={ref}>
       <h1 className="font-bold text-[40px] uppercase text-center">About Us</h1>
         <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Our story</p>
 
