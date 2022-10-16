@@ -78,7 +78,7 @@ const NavBar = () => {
 
 
       {/**Desktop NavBar */}
-      <div className="bg-transparent w-[70vw] mx-auto pt-10 flex justify-between items-center">
+      <div className="bg-transparent w-[70vw] mx-auto pt-10 hidden lg:flex justify-between items-center">
         <h2 className="italic text-[21px] font-semibold font-[Kaushan-Script] text-[#5eff5a]">Wise Guy Club NFT</h2>
         <div className="flex space-x-6 font-[Montserrat] text-[11px] text-white uppercase">
             <a href="#goal" className="hover:text-[#5eff5a]">

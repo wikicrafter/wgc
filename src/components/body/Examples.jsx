@@ -6,16 +6,17 @@ const Examples = () => {
     <div className="bg-[#F8F9FA] pt-[10vh] pb-[8vh]">
         <h1 className="font-bold text-[40px] uppercase text-center">Examples:</h1>
         <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Here you will see some minted NFTs on first phase</p>
-        <NFTCard
-            img="0.png"
-            header="First minted NFT"
-            content="wgc nft"
-        />
-        <NFTCard
-            img="1.png"
-            header="WGC minted NFT"
-            content="wgc nft"
-        />
+        <div className="w-[95vw] mx-auto flex flex-col lg:w-[75vw] lg:grid lg:grid-cols-3 lg:gap-x-6">
+            <NFTCard
+                img="0.png"
+                header="First minted NFT"
+                content="wgc nft"
+            />
+            <NFTCard
+                img="1.png"
+                header="WGC minted NFT"
+                content="wgc nft"
+            />
         <NFTCard
             img="2.png"
             header="WGC minted NFT"
@@ -36,6 +37,7 @@ const Examples = () => {
             header="First minted NFT"
             content="wgc nft"
         />
+        </div>
 
     </div>
   )
