@@ -3,7 +3,7 @@ import NFTCard from './NFTCard'
 
 const Examples = () => {
   return (
-    <div className="bg-[#F8F9FA] pt-[10vh] pb-[8vh]">
+    <div className="bg-[#F8F9FA] pt-[10vh] pb-[8vh]" id="examples">
         <h1 className="font-bold text-[40px] uppercase text-center">Examples:</h1>
         <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Here you will see some minted NFTs on first phase</p>
         <div className="w-[95vw] mx-auto flex flex-col lg:w-[70vw] lg:grid lg:grid-cols-3 lg:gap-x-6">

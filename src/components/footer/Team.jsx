@@ -3,7 +3,7 @@ import { FaTwitter } from 'react-icons/fa'
 
 const Team = () => {
   return (
-    <div className="bg-[#fff] py-[10vh] w-[90vw] lg:w-[60vw] mx-auto">
+    <div className="bg-[#fff] py-[10vh] w-[90vw] lg:w-[60vw] mx-auto" id="team">
         <h1 className="font-bold text-[40px] uppercase text-center">Team</h1>
         <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Follow us on our social media. We will appreciate any support towards our project.</p>
 

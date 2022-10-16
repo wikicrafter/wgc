@@ -2,7 +2,7 @@ import React from 'react'
 
 const Goals = () => {
   return (
-    <div className="mt-[10vh] lg:mb-[10vh] w-[98vw] lg:w-[70vw] mx-auto">
+    <div className="mt-[10vh] lg:mb-[10vh] w-[98vw] lg:w-[70vw] mx-auto" id="goal">
         <h2 className="uppercase text-[40px] font-bold text-center">Our Goal is:</h2>
         <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px]">To make life better together</p>
         <div className="flex flex-col lg:flex-row mt-[8vh] items-center">
