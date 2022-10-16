@@ -7,10 +7,10 @@ const Footer = () => {
     <div>
         <Team />
         <Socials />
-        <div className="mt-[10vh]">
-                <p className="text-center text-[12px] text-[#5eff5a] my-2">Privacy Policy</p>
-                <p className="text-center text-[12px] text-[#5eff5a] my-2">FAQS</p>
+        <div className="mt-[10vh] lg:flex lg:justify-between lg:w-[60vw] lg:mx-auto">
                 <p className="text-center text-[11px] mb-6">Copyright © Wise Guy Club NFT 2022</p>
+                <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold">Privacy Policy</p>
+                <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold">FAQS</p>
         </div>
     </div>
   )
