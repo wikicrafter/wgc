@@ -16,6 +16,20 @@ const NavBar = () => {
     const goToSection = (section) => {
         document.querySelector(section).scrollIntoView({ behavior: 'smooth' })
     }
+
+
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById("navbar").classList.add("fixed", "top-0" , "left-0", "right-0", "z-50", "bg-[#212529]", "animate__animated", "animate__fadeInDown")
+            document.getElementById("navbar").classList.remove("animate__animated" , "animate__fadeOutUp")
+            document.getElementById("navbar").style.transition = "all 0.5s ease-in-out"
+        } else {
+            document.getElementById("navbar").classList.remove("fixed", "top-0", "left-0", "right-0", "z-50", "bg-[#212529]", "animate__animated", "animate__fadeInDown")
+            document.getElementById("navbar").classList.add("animate__animated", "animate__fadeOutUp")
+            document.getElementById("navbar").style.transition = "all 0.5s ease-in-out"
+        }
+    }
   return (
     <div>
 
@@ -79,9 +93,10 @@ const NavBar = () => {
 
 
       {/**Desktop NavBar */}
-      <div className="bg-transparent w-[70vw] mx-auto pt-10 hidden lg:flex justify-between items-center">
+      <div className="" id="navbar">
+      <div className="bg-transparent w-[70vw] mx-auto py-4 hidden lg:flex justify-between items-center">
         <h2 className="italic text-[21px] font-semibold font-[Kaushan-Script] text-[#5eff5a]">Wise Guy Club NFT</h2>
-        <div className="flex space-x-6 font-[Montserrat] text-[11px] text-white uppercase">
+        <div className="flex space-x-6 font-[Montserrat] font-bold text-[11px] text-white uppercase">
           <span onClick={() => goToSection('#goal')} className="hover:text-[#5eff5a] cursor-pointer">
                 Goal
             </span>
@@ -101,6 +116,7 @@ const NavBar = () => {
                 Mint
             </a>
         </div>
+      </div>
       </div>
 
     </div> 
