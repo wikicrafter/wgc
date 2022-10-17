@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PlusCard from './PlusCard'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
 
 
 const NFTCard = ({ img, header, content, mintedBy, other }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-      <div className="bg-[#fff] flex flex-col mt-[2vh]">
+      <div data-aos="flip-left" data-aos-duration="2000" className="bg-[#fff] flex flex-col mt-[2vh]">
       <div className="lg:relative">
-        <img src={`/assets/img/${img}`} alt="nft" className="w-full" />
+        <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
         <div 
         onClick={onOpen}
-        className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-75 plusCard transition duration-500 ease-in-out cursor-pointer"
+        className="lg:absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-75 plusCard transition duration-1000 ease-in-out cursor-pointer"
         >
           <PlusCard />
           </div>

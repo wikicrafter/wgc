@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Goals = () => {
   const {ref, inView} = useInView({
@@ -14,12 +16,18 @@ const Goals = () => {
         document.querySelector('#nav1').classList.remove('text-[#5eff5a]')
     }
     }, [inView])
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
   return (
     <div className="mt-[10vh] lg:mb-[10vh] w-[98vw] lg:w-[70vw] mx-auto" id="goal" ref={ref}>
-        <h2 className="uppercase text-[40px] font-bold text-center">Our Goal is:</h2>
-        <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px]">To make life better together</p>
+        <div data-aos="zoom-in-up" data-aos-duration="1500">
+            <h2 className="uppercase text-[40px] font-bold text-center">Our Goal is:</h2>
+            <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px]">To make life better together</p>
+        </div>
         <div className="flex flex-col lg:flex-row mt-[8vh] items-center">
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="1500" className="flex flex-col items-center">
                 <div className="bg-[#5eff5a] h-[8rem] w-[8rem] rounded-full"></div>
                 <h2 className="font-bold text-center my-4 lg:my-0 text-[18px]">Supportive</h2>
                 <span className="text-[#6C757D] text-[12px] px-3 mb-10 lg:mb-0 text-center">
@@ -27,7 +35,7 @@ const Goals = () => {
                 </span>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
                 <div className="bg-[#5eff5a] h-[8rem] w-[8rem] rounded-full"></div>
                 <h2 className="font-bold text-center my-4 lg:my-0 text-[18px]">Quality</h2>
                 <span className="text-[#6C757D] text-[12px] px-3 text-center mb-10 lg:mb-0">
@@ -35,7 +43,7 @@ const Goals = () => {
                 </span>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2500" className="flex flex-col items-center">
                 <div className="bg-[#5eff5a] h-[8rem] w-[8rem] rounded-full"></div>
                 <h2 className="font-bold text-center my-4 lg:my-0 text-[#5eff5a] text-[18px]">
                     <a href="https://en.wikipedia.org/wiki/Web3" target="_blank" rel="noreferrer">Web3</a>
