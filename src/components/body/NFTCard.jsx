@@ -8,6 +8,7 @@ const NFTCard = ({ img, header, content, mintedBy, other }) => {
 
   return (
       <div className="bg-[#fff] flex flex-col mt-[2vh]">
+
       <div className="lg:relative">
         <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
         <div 
@@ -23,7 +24,9 @@ const NFTCard = ({ img, header, content, mintedBy, other }) => {
 
       {/* Modal */}
       <div className="modal">
+
         <Modal onClose={onclose} isOpen={isOpen} size="xl" isCentered>
+
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>{header}</ModalHeader>

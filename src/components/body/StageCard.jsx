@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const StageCard = ({ header, content, timeline }) => {
+  
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
       {/* Mobile */}
-      <div className="flex space-x-8 lg:hidden">
+      <div data-aos="fade-up" data-aos-duration="2000" className="flex space-x-8 lg:hidden">
         <div className="flex flex-col items-center">
             <div className="bg-gray-200 h-[6rem] w-[6rem] items-center justify-center flex rounded-full">
                 <img src="/assets/nft_one.jpg" alt="idea" className="h-[5.2rem] w-[5.2rem] rounded-full" />
@@ -19,7 +26,7 @@ const StageCard = ({ header, content, timeline }) => {
       </div>
 
       {/* Desktop */}
-      <div className="hidden lg:flex space-x-4 w-[40vw] pl-[20%]">
+      <div data-aos="fade-up" data-aos-duration="2000" className="hidden lg:flex space-x-4 w-[40vw] pl-[20%]">
         <div className="flex flex-col items-center">
             <div className="bg-gray-200 h-[12rem] w-[12rem] items-center justify-center flex rounded-full">
                 <img src="/assets/nft_one.jpg" alt="idea" className="h-[11rem] w-[11rem] rounded-full" />
