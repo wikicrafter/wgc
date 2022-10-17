@@ -4,7 +4,7 @@ import StageCard from './StageCard'
 
 const Stages = () => {
     const {ref, inView} = useInView({
-        threshold: 0.8,
+        threshold: 0.5,
       })
     
       useEffect(() => {
@@ -17,8 +17,8 @@ const Stages = () => {
         }, [inView])
   return (
     <div className="bg-[#F8F9FA] py-[6vh]" id="stages">
-        <h1 className="font-bold text-[40px] uppercase text-center">Stages</h1>
-        <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]" ref={ref}>Processes which passing through this project</p>
+        <h1 className="font-bold text-[40px] uppercase text-center" ref={ref}>Stages</h1>
+        <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Processes which passing through this project</p>
         {/* Mobile */}
        <div className="w-[90vw] mx-auto pt-10 lg:hidden">
             <StageCard
