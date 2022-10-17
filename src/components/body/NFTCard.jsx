@@ -14,14 +14,17 @@ const NFTCard = ({ img, header, content, mintedBy, other }) => {
   return (
       <div className="bg-[#fff] flex flex-col mt-[2vh]">
         {/* Desktop */}
-      <div data-aos="flip-left" data-aos-duration="2000" className="lg:relative lg:block hidden">
-        <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
-        <div 
-        onClick={onOpen}
-        className="lg:absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-75 plusCard transition duration-1000 ease-in-out cursor-pointer"
-        >
-          <PlusCard />
-          </div>
+      <div data-aos="flip-left" data-aos-duration="2000" className="lg:block hidden">
+        
+        <div className="relative">
+          <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
+          <div 
+          onClick={onOpen}
+          className="lg:absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-75 plusCard transition duration-1000 ease-in-out cursor-pointer"
+          >
+            <PlusCard />
+            </div>
+        </div>
         <h2 className="text-center font-bold text-[18px] mt-8 ">{header}</h2>
         <p className="mb-6 font-[Droid-Serif] text-center uppercase items-center italic text-[#6C757D] text-[16px]">{content}</p>
       </div>
@@ -29,13 +32,7 @@ const NFTCard = ({ img, header, content, mintedBy, other }) => {
 
       {/* Mobile */}
       <div className="lg:hidden">
-        <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
-        <div 
-        onClick={onOpen}
-        className="lg:absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-75 plusCard transition duration-1000 ease-in-out cursor-pointer"
-        >
-          <PlusCard />
-          </div>
+      <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
       <h2 className="text-center font-bold text-[18px] mt-8 ">{header}</h2>
       <p className="mb-6 font-[Droid-Serif] text-center uppercase items-center italic text-[#6C757D] text-[16px]">{content}</p>
       </div>
