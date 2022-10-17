@@ -7,6 +7,7 @@ const Examples = () => {
     threshold: 0.5,
   })
 
+
   useEffect(() => {
     if (inView) {
         document.querySelector('#nav2').classList.add('text-[#5eff5a]')
