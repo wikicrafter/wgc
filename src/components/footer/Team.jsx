@@ -23,11 +23,9 @@ const Team = () => {
             AOS.refresh();
           }, []);
   return (
-    <div className="bg-[#fff] py-[10vh] w-[90vw] lg:w-[70vw] mx-auto" id="team" ref={ref}>
-        <div data-aos="zoom-in-up" data-aos-duration="1500">
-            <h1 className="font-bold text-[40px] uppercase text-center">Team</h1>
-            <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Follow us on our social media. We will appreciate any support towards our project.</p>
-        </div>
+    <div className="bg-[#fff] py-[10vh] w-[90vw] lg:w-[70vw] lg:space-x-8 mx-auto" id="team" ref={ref}>
+        <h1 className="font-bold text-[40px] uppercase text-center">Team</h1>
+        <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Follow us on our social media. We will appreciate any support towards our project.</p>
 
         <div className="flex flex-col lg:flex-row lg:justify-between lg:space-x-10">
             <div data-aos="fade-up-right" data-aos-duration="2000" className="items-center flex flex-col my-[5vh]">

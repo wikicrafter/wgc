@@ -66,7 +66,7 @@ const NavBar = () => {
             px="2vw"
             bg='#212529'
             >
-              <div className="flex flex-col space-y-6 font-[Montserrat] text-[11px] text-white uppercase">
+              <div className="flex flex-col space-y-6 font-[Montserrat] cursor-pointer text-[11px] text-white uppercase">
                 <span onClick={() => goToSection('#goal')}>
                     Goal
                 </span>
