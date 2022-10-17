@@ -24,7 +24,7 @@ const Stages = () => {
           }, []);
   return (
     <div className="bg-[#F8F9FA] py-[6vh]" id="stages">
-        <div data-aos="zoom-in-up" data-aos-duration="1500">
+        <div>
             <h1 className="font-bold text-[40px] uppercase text-center" ref={ref}>Stages</h1>
             <p className="my-3 font-[Droid-Serif] text-center items-center italic text-[#6C757D] text-[16px] mb-[4vh]">Processes which passing through this project</p>
         </div>
@@ -59,7 +59,7 @@ const Stages = () => {
                 header="Stage 7:"
                 content="11200 NFT items on public mint under 0.04ETH"
             />
-            <div data-aos="fade-up" data-aos-duration="2000" className="bg-gray-200 h-[6rem] w-[6rem] items-center justify-center flex rounded-full">
+            <div className="bg-gray-200 h-[6rem] w-[6rem] items-center justify-center flex rounded-full">
                 <div className="bg-[#5eff5a] h-[5.5rem] w-[5.5rem] rounded-full flex justify-center items-center text-center text-[#fff] text-[10px] font-bold">
                     <span>Be Part of Our story!</span>
                 </div>

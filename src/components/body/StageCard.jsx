@@ -11,7 +11,7 @@ const StageCard = ({ header, content, timeline }) => {
   return (
     <div>
       {/* Mobile */}
-      <div data-aos="fade-up" data-aos-duration="2000" className="flex space-x-8 lg:hidden">
+      <div className="flex space-x-8 lg:hidden">
         <div className="flex flex-col items-center">
             <div className="bg-gray-200 h-[6rem] w-[6rem] items-center justify-center flex rounded-full">
                 <img src="/assets/nft_one.jpg" alt="idea" className="h-[5.2rem] w-[5.2rem] rounded-full" />

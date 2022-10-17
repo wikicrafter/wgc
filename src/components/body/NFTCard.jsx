@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PlusCard from './PlusCard'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
 
 
 const NFTCard = ({ img, header, content, mintedBy, other }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
       <div className="bg-[#fff] flex flex-col mt-[2vh]">
-
-      <div className="lg:relative">
+        {/* Desktop */}
+      <div data-aos="flip-left" data-aos-duration="2000" className="lg:relative lg:block hidden">
         <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
         <div 
         onClick={onOpen}
@@ -17,16 +22,28 @@ const NFTCard = ({ img, header, content, mintedBy, other }) => {
         >
           <PlusCard />
           </div>
+        <h2 className="text-center font-bold text-[18px] mt-8 ">{header}</h2>
+        <p className="mb-6 font-[Droid-Serif] text-center uppercase items-center italic text-[#6C757D] text-[16px]">{content}</p>
       </div>
+
+
+      {/* Mobile */}
+      <div className="lg:hidden">
+        <img src={`/assets/img/${img}`} alt="nft" className="w-full" onClick={onOpen} />
+        <div 
+        onClick={onOpen}
+        className="lg:absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-75 plusCard transition duration-1000 ease-in-out cursor-pointer"
+        >
+          <PlusCard />
+          </div>
       <h2 className="text-center font-bold text-[18px] mt-8 ">{header}</h2>
       <p className="mb-6 font-[Droid-Serif] text-center uppercase items-center italic text-[#6C757D] text-[16px]">{content}</p>
+      </div>
       
 
       {/* Modal */}
       <div className="modal">
-
         <Modal onClose={onclose} isOpen={isOpen} size="xl" isCentered>
-
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>{header}</ModalHeader>
