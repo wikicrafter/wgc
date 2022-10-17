@@ -25,32 +25,44 @@ const Examples = () => {
                 img="0.png"
                 header="First minted NFT"
                 content="wgc nft"
+                mintedBy="Charly"
+                other="First unique NFT"
             />
             <NFTCard
                 img="1.png"
                 header="WGC minted NFT"
                 content="wgc nft"
+                mintedBy="Charly"
+                other=" unique NFT"
             />
-        <NFTCard
-            img="2.png"
-            header="WGC minted NFT"
-            content="wgc nft"
-        />
-        <NFTCard
-            img="3.png"
-            header="First minted NFT"
-            content="wgc nft"
-        />
-        <NFTCard
-            img="4.png"
-            header="First minted NFT"
-            content="wgc nft"
-        />
-        <NFTCard
-            img="5.png"
-            header="First minted NFT"
-            content="wgc nft"
-        />
+            <NFTCard
+                img="2.png"
+                header="WGC minted NFT"
+                content="wgc nft"
+                mintedBy="Paulinha"
+                other="unique NFT"
+            />
+            <NFTCard
+                img="3.png"
+                header="First minted NFT"
+                content="wgc nft"
+                mintedBy="Joe"
+                other="First unique NFT"
+            />
+            <NFTCard
+                img="4.png"
+                header="First minted NFT"
+                content="wgc nft"
+                mintedBy="Lara"
+                other="First unique NFT"
+            />
+            <NFTCard
+                img="5.png"
+                header="First minted NFT"
+                content="wgc nft"
+                mintedBy="Paulinha"
+                other="First unique NFT"
+            />
         </div>
 
     </div>
