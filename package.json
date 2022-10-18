@@ -18,12 +18,11 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "tailwind": "npx tailwind -i ./styles/main.css -o ./styles/globals.css --watch"
+        "lint": "next lint"
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.8",
-        "postcss": "^8.4.16",
+        "autoprefixer": "^10.4.12",
+        "postcss": "^8.4.18",
         "tailwindcss": "^3.1.8"
     }
 }
