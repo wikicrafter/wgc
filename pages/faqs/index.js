@@ -2,8 +2,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Data from "../../components/faqs/Data";
 import NavBar from "../../components/header/NavBar";
-import Socials from "../../components/footer/Socials";
 import Link from "next/link";
+import Meta from '../defaults/Meta';
 
 const FAQs = () => {
   if (typeof window !== "undefined") {
@@ -12,6 +12,7 @@ const FAQs = () => {
 
   return (
     <div>
+      <Meta title="FAQs" />
       <div className="bg-[#212529]">
         <NavBar />
       </div>
@@ -38,7 +39,9 @@ const FAQs = () => {
                 <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold cursor-pointer">
                   <Link href="/faqs">FAQs</Link>
                 </p>
-                <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold">Privacy Policy</p>
+                <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold cursor-pointer">
+                  <Link href="/legal">Privacy Policy</Link>
+                </p>
         </div> 
     </div>
   );

@@ -13,7 +13,9 @@ const Footer = () => {
                 <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold cursor-pointer">
                   <Link href="/faqs">FAQs</Link>
                 </p>
-                <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold">Privacy Policy</p>
+                <p className="text-center text-[12px] text-[#5eff5a] my-2 lg:my-0 font-bold cursor-pointer">
+                  <Link href="/legal">Privacy Policy</Link>
+                </p>
         </div>
 
         
