@@ -10,7 +10,7 @@ const Header = () => {
   }
   return (
     <div>
-        <div className="bg-[url('/public/assets/header.png')] bg-center relative h-[50vh] bg-cover bg-no-repeat w-full lg:h-[76vh]">
+        <div className="bg-[url('/assets/header.png')] bg-center relative h-[50vh] bg-cover bg-no-repeat w-full lg:h-[76vh]">
         <NavBar />
             <div className="pt-[18vh] lg:pt-[32vh]">
                 <div

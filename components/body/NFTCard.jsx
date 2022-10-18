@@ -40,7 +40,7 @@ const NFTCard = ({ img, header, content, mintedBy, other }) => {
 
       {/* Modal */}
       <div className="modal">
-        <Modal onClose={onclose} isOpen={isOpen} size="xl" isCentered>
+        <Modal onClose={onClose} isOpen={isOpen} size="xl" isCentered>
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>{header}</ModalHeader>

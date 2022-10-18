@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     Drawer,
     DrawerBody,
@@ -12,12 +12,11 @@ import { FaBars } from 'react-icons/fa'
 const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
-
     const goToSection = (section) => {
-        document.querySelector(section).scrollIntoView({ behavior: 'smooth' })
+      document.querySelector(section)?.scrollIntoView({ behavior: 'smooth' })
     }
 
-
+    if (typeof window !== 'undefined') {
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -30,6 +29,13 @@ const NavBar = () => {
             document.getElementById("navbar").style.transition = "all 0.5s ease-in-out"
         }
     }
+    }
+
+    useEffect(() => {
+    
+
+    goToSection('#home')
+    }, [])
   return (
     <div>
 
