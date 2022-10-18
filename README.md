@@ -10,6 +10,7 @@ A simple landing page for the Wise Guy NFT Club.
 - Next.js
 - Tailwind CSS
 - Chakra UI
+- AOS (animation library)
 
 ## Sections
 - Header
