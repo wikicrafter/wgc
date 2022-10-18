@@ -9,6 +9,7 @@ import {
     Button,
   } from '@chakra-ui/react'
 import { FaBars } from 'react-icons/fa'
+import Link from 'next/link'
 const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
@@ -43,7 +44,7 @@ const NavBar = () => {
     {/**Mobile Navbar */}
     <div className="bg-[#212529] w-full fixed top-0 lg:hidden ">
     <div className="w-[95vw] py-[12px] mx-auto items-center flex justify-between text-[#5eff5a]">
-        <h2 className="italic text-[15px] font-semibold font-[Kaushan-Script]">Wise Guy Club NFT</h2>   
+        <h2 className="italic text-[15px] font-semibold font-[Kaushan-Script]"><Link href="/" passHref>Wise Guy Club NFT</Link></h2>   
         <div className="lg:hidden ">
           <Button ref={btnRef} colorScheme='black' onClick={onOpen}>
             <div className="bg-[#5eff5a] text-[#fff] flex space-x-1 uppercase items-center p-[13px] rounded-md">
@@ -101,7 +102,7 @@ const NavBar = () => {
       {/**Desktop NavBar */}
       <div className="" id="navbar">
       <div className="bg-transparent w-[70vw] mx-auto py-4 hidden lg:flex justify-between items-center">
-        <h2 className="italic text-[21px] font-semibold font-[Kaushan-Script] text-[#5eff5a]">Wise Guy Club NFT</h2>
+        <h2 className="italic text-[21px] font-semibold font-[Kaushan-Script] text-[#5eff5a]"><Link href="/" passHref>Wise Guy Club NFT</Link></h2>
         <div className="flex space-x-6 font-[Montserrat] text-[11px] text-white uppercase">
           <span id="nav1" onClick={() => goToSection('#goal')} className="hover:text-[#5eff5a] cursor-pointer">
                 Goal
