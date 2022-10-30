@@ -1,7 +1,7 @@
 # Getting Started
 
 ## Project Title
-Wise Guy NFT Club
+Web-Page modification of [Wise Guy Club NFT Project](https://wgcnft.com/) <br> Modified repo still on test!
 
 ## Description
 A simple landing page for the Wise Guy NFT Club.
